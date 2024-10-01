@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>Editor.js example page</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+  </style>
+</head>
+<body>
+  <div style = "padding: 0 14px;">
+    <div id="editorjs"></div>
+  </div>
+  
+  <button id="save-button">Save</button>
+  <pre id="output"></pre>
+
+  <script type="module">
+    import EditorJS from '@editorjs/editorjs';
+    import Link from './src/index.js'
+
+   
+    const editor = new EditorJS({
+      placeholder : 'votre Text',
+      tools: {
+        Link : {
+          class : Link,
+          inlineTools : true
+        }
+      },
+      data : {
+            "time": 1711908827761,
+            "blocks": [
+                {
+                    "id": "49JIDH_9FQ",
+                    "type": "Link",
+                    "data": {
+                        "data": {
+                            "expression": "<b>ville</b> <a href=\"/wiki/Annexe:Prononciation/fran%C3%A7ais\" title=\"Annexe:Prononciation/français\"><span class=\"API\" title=\"Prononciation API\">\\vil\\</span></a> <span class=\"ligne-de-forme\"><i>féminin</i></span>\n",
+                            "definition": "<li><a href=\"/wiki/assemblage\" title=\"assemblage\">Assemblage</a> ordonné d'un nombre assez <a href=\"/wiki/consid%C3%A9rable\" title=\"considérable\">considérable</a> de <a href=\"/wiki/maison\" title=\"maison\">maisons</a> <a href=\"/wiki/disposer\" title=\"disposer\">disposées</a> par <a href=\"/wiki/rue\" title=\"rue\">rues</a>, et <a href=\"/wiki/limiter\" title=\"limiter\">limitées</a> parfois par une <a href=\"/wiki/enceinte\" title=\"enceinte\">enceinte</a>.\n<ul><li><i>Oh&nbsp;! caballero, la <b>ville</b> la plus belle et la plus grande de la vieille Europe est bien petite, bien sale et bien mesquine comparée au désert.</i> <span class=\"sources\"><span class=\"tiret\">—&nbsp;</span>(<a href=\"https://fr.wikipedia.org/wiki/Gustave_Aimard\" class=\"extiw\" title=\"w:Gustave Aimard\">Gustave Aimard</a>, <i>Les Trappeurs de l’Arkansas</i>, Éditions&nbsp;Amyot, Paris,&nbsp;<a href=\"https://fr.wikisource.org/wiki/Les_Trappeurs_de_l%E2%80%99Arkansas\" class=\"extiw\" title=\"s:Les Trappeurs de l’Arkansas\">1858</a>)</span></li>\n<li><i>Il y a dans certaines <b>villes</b> jusqu’ici préservées, il y a de ces rues extraordinaires, remarquables tantôt par leur fourmillement et tantôt par leur silence, car la variétés des <b>villes</b> est infinie.</i> <span class=\"sources\"><span class=\"tiret\">—&nbsp;</span>(<a href=\"https://fr.wikipedia.org/wiki/Pierre_Lou%C3%BFs\" class=\"extiw\" title=\"w:Pierre Louÿs\">Pierre Louÿs</a>, <i>La ville plus belle que le monument</i>, dans <i>Archipel</i>, 1932)</span></li>\n<li><i>Soudain, devant nous, au seuil des montagnes, apparaît une <b>ville</b>. C’est si nettement une <b>ville</b>, la <b>ville</b> des écriteaux d’école, mi en plaine, mi en montagne, que nous doutons d’y pénétrer. Au-dessus d’elle, un château-fort, les tours encore presque intactes, mais renversées horizontalement, comme dans les mirages qui n’ont pu tourner tout-à-fait. Jamais l’état-major […] ne nous permettra de pénétrer dans cet exemple de <b>ville</b>, avec sa cathédrale ogivale au milieu, ses usines à droite, ses toits de tuile à gauche.</i> <span class=\"sources\"><span class=\"tiret\">—&nbsp;</span>(<a href=\"https://fr.wikipedia.org/wiki/Jean_Giraudoux\" class=\"extiw\" title=\"w:Jean Giraudoux\">Jean Giraudoux</a>, <i>Retour d’Alsace - Août 1914</i>, 1916)</span></li>\n<li><i>[…] nous passons sous le pont suspendu de Brooklyn et devant Manhattan et ses gratte-ciel, et ma dernière vision de New-York me laisse une impression de <b>ville</b> monstrueuse et titanesque.</i> <span class=\"sources\"><span class=\"tiret\">—&nbsp;</span>(<a href=\"https://fr.wikipedia.org/wiki/Alain_Gerbault\" class=\"extiw\" title=\"w:Alain Gerbault\">Alain Gerbault</a>, <i>À la poursuite du soleil</i>; tome 1&nbsp;: <i>De New-York à Tahiti</i>, 1929)</span></li>\n<li><i>Le Havre, tout le monde le sait, est une <b>ville</b> de création beaucoup plus récente que Rouen, une <b>ville</b> claire, ouverte, aérée, une <b>ville</b> rectiligne.</i> <span class=\"sources\"><span class=\"tiret\">—&nbsp;</span>(<a href=\"https://fr.wikipedia.org/wiki/Ludovic_Naudeau\" class=\"extiw\" title=\"w:Ludovic Naudeau\">Ludovic Naudeau</a>, <cite style=\"font-style:normal\" class=\"ouvrage\" id=\"CITEREF\"><i>La France se regarde&nbsp;: Le Problème de la natalité</i></cite>, <a href=\"https://fr.wikipedia.org/wiki/Hachette_Livre\" class=\"extiw\" title=\"w:Hachette Livre\">Librairie Hachette</a>, Paris, 1931)</span></li></ul></li>\n<li>Entité administrative ayant <a href=\"/wiki/l%C3%A9galement\" title=\"légalement\">légalement</a> obtenu le <a href=\"/wiki/statut\" title=\"statut\">statut</a> de ville, comme par exemple certaines <a href=\"/wiki/commune\" title=\"commune\">communes</a> de <a href=\"/wiki/Belgique\" title=\"Belgique\">Belgique</a> ou du <a href=\"/wiki/Luxembourg\" title=\"Luxembourg\">Luxembourg</a>.\n<ul><li><i>Chiny a le statut de <b>ville</b>, glorieux héritage de son lointain passé historique.</i> <span class=\"sources\"><span class=\"tiret\">—&nbsp;</span>(Bernard Dubrulle, <i>Le Petit Futé Wallonie: L’Ardenne et bien plus</i>, 2007)</span></li></ul></li>\n<li><span class=\"emploi\"><span id=\"extension\"></span><i>(<span class=\"texte\"><a href=\"/wiki/Annexe:Glossaire_grammatical#P\" title=\"Annexe:Glossaire grammatical\">Par extension</a></span>)</i></span> L’<a href=\"/wiki/administration\" title=\"administration\">administration</a> de cette <a href=\"/wiki/cit%C3%A9\" title=\"cité\">cité</a>.\n<ul><li><i>Il avait une partie de son bien en rentes sur la <b>ville</b> de Paris.</i></li></ul></li>\n<li><span class=\"emploi\"><span id=\"extension\"></span><i>(<span class=\"texte\"><a href=\"/wiki/Annexe:Glossaire_grammatical#P\" title=\"Annexe:Glossaire grammatical\">Par extension</a></span>)</i></span> <a href=\"/wiki/population\" title=\"population\">Population</a> d’une <b>ville</b>.\n<ul><li><i>Et voilà qu’Eugène passait les soirées entières dans le salon jaune, écoutant religieusement ces grotesques que lui, Aristide, avait si impitoyablement raillés. Quand il sut, par les bavardages de la <b>ville</b>, que son frère donnait des poignées de main à Granoux et en recevait du marquis, il se demanda avec anxiété ce qu’il devait croire.</i> <span class=\"sources\"><span class=\"tiret\">—&nbsp;</span>(Émile Zola, <i>La Fortune des Rougon</i>, <span style=\"white-space:nowrap\">G. Charpentier</span>, Paris, 1871, <span style=\"white-space:nowrap\">ch. III</span>&nbsp;; réédition 1879, <span style=\"white-space:nowrap\">p. 99</span>)</span></li>\n<li><i>À Marseille, les juifs eurent droit de cité jusqu’au XVI<sup style=\"font-size:83.33%;line-height:1\">e</sup> siècle, et il semble pas que la <b>ville</b> ait eu à le regretter, car c’est un des leurs, Crescas Davin, qui introduisit chez elle, en 1371, la fabrication du savon.</i> <span class=\"sources\"><span class=\"tiret\">—&nbsp;</span>(<a href=\"https://fr.wikipedia.org/wiki/L%C3%A9on_Berman\" class=\"extiw\" title=\"w:Léon Berman\">Léon Berman</a>, <i>Histoire des Juifs de France des origines à nos jours</i>, 1937)</span></li>\n<li><i>La <b>ville</b> et ses plus riches bourgeois veulent surpasser en magnificence les autres cités. La réception est «&nbsp;de gros coutange&nbsp;» mais aussi «&nbsp;chose très admirable&nbsp;».</i> <span class=\"sources\"><span class=\"tiret\">—&nbsp;</span>(Jean-François Solnon, <i>Quand la Franche-Comté était espagnole</i>, Fayard, 1989)</span></li></ul></li>\n<li><a href=\"/wiki/vie\" title=\"vie\">Vie</a> <a href=\"/wiki/urbaine\" title=\"urbaine\">urbaine</a>, <a href=\"/wiki/m%C5%93urs\" title=\"mœurs\">mœurs</a> qui y <a href=\"/wiki/r%C3%A9gner\" title=\"régner\">règnent</a>, par opposition au <a href=\"/wiki/s%C3%A9jour\" title=\"séjour\">séjour</a>, à la vie et aux <a href=\"/wiki/m%C5%93urs\" title=\"mœurs\">mœurs</a> de la <a href=\"/wiki/campagne\" title=\"campagne\">campagne</a>.\n<ul><li><i>J’aime mieux la <b>ville</b> que les champs.</i></li>\n<li><i>Il préfère la campagne à la <b>ville</b>.</i></li></ul></li>\n<li><i>(<span title=\"L’histoire est l’étude des évènements passés.\" id=\"fr-histoire\">Histoire</span>)</i> <span class=\"emploi\"><span id=\"ellipse\"></span><i>(<span class=\"texte\"><a href=\"/wiki/ellipse\" title=\"ellipse\">Par ellipse</a></span>)</i></span> <a href=\"/wiki/corps\" title=\"corps\">Corps</a> des <a href=\"/wiki/officier\" title=\"officier\">officiers</a> <a href=\"/wiki/municipaux\" title=\"municipaux\">municipaux</a>.</li>\n<li><span class=\"emploi\"><span id=\"ellipse\"></span><i>(<span class=\"texte\"><a href=\"/wiki/ellipse\" title=\"ellipse\">Par ellipse</a></span>)</i></span> Médecine de ville.</li>",
+                            "value": "ville"
+                        }
+                    }
+                }
+            ],
+            "version": "2.28.2"
+        }
+
+    });
+
+    const saveButton = document.getElementById('save-button');
+    const output = document.getElementById('output');
+
+    saveButton.addEventListener('click', () => {
+     editor.save().then( result => {
+      console.log(result)
+     }).catch(error => {
+      console.log(error)
+     })
+    })
+  </script>
+</body>
+</html>
+
